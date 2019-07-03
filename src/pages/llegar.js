@@ -34,6 +34,8 @@ export default () => (
           )
         }
       </LangContext.Consumer>
+    </div>
+    <div id="indicaciones">
       <img src={rutano} alt="b" />
       <img src={rutaok} alt="a" />
       <img src={caminono} alt="d" />
