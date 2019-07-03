@@ -1,21 +1,30 @@
 import React from 'react'
 import hero from '../img/header.jpeg'
-import Header from '../components/header'
+import LangContext from '../contexts/langContext'
 
 export default () => (
   <>
-    <Header />
+    <img id="hero" class="fullwidth" src={hero} />
     <div className="content-index">
-      <img id="hero" class="fullwidth" src={hero} />
-      <h3>La ceremonia</h3>
-      <br />
-      <br />
-      <br />
-      <h3>La celebración</h3>
-      <br />
-      <br />
-      <br />
-      <h3>Los Juegos</h3>
+      <LangContext.Consumer>
+        {lang =>
+          lang === 'es' ? (
+            <div>
+              <p>
+                Érase una vez, un chico y una chica que crecieron en reinos muy lejanos... crecieron mucho, mucho y decidieron ser felices y
+                comer perdices.
+              </p>
+            </div>
+          ) : (
+            <div>
+              <p>
+                Es war einmal, ein Junge und ein Mädchen, die in sehr fernen Gefilden aufwuchsen ... wuchsen sehr, sehr und beschlossen,
+                glücklich zu sein und Rebhühner zu essen.
+              </p>
+            </div>
+          )
+        }
+      </LangContext.Consumer>
     </div>
   </>
 )

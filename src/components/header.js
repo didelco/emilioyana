@@ -1,21 +1,55 @@
 import React from 'react'
 import { Link } from 'components/Router'
+import LangContext from '../contexts/langContext'
+import es from '../img/es.png'
+import de from '../img/de.png'
 
-export default () => (
+const Header = seti => (
   <div id="header">
     <div id="www">
-      <div>6 de Julio 2019</div> <div>Toledo (Spain)</div>
-      <div>#emilioyanasecasan</div>
+      <div id="dateandplace">
+        6 de Julio 2019 <span className="place">Toledo (Spain)</span>
+      </div>
+      <div>
+        <LangContext.Consumer>
+          {LangContext => {
+            const invLang = LangContext === 'es' ? 'de' : 'es'
+            return (
+              <div id="langSelector" onClick={() => seti.seti(invLang)}>
+                <span>{invLang === 'es' ? 'Español' : 'Deutsch'}</span>
+                <img src={invLang === 'es' ? es : de} alt="flag" height="16px" />
+              </div>
+            )
+          }}
+        </LangContext.Consumer>
+      </div>
     </div>
     <div>
-      <h1>Emilio & Ana</h1>
+      <h1>Ana & Emilio</h1>
     </div>
-    <nav>
-      <Link to="/">Indice</Link>
-      <Link to="/ceremonia">Ceremonia</Link>
-      <Link to="/celebracion">Celebración</Link>
-      <Link to="/juegos">Juegos</Link>
-      <Link to="/fotos">Fotos</Link>
-    </nav>
+
+    <LangContext.Consumer>
+      {lang =>
+        lang === 'es' ? (
+          <nav>
+            <Link to="/">Los novios</Link>
+            <Link to="/llegar">Cómo llegar</Link>
+            <Link to="/ceremonia">La ceremonia</Link>
+            <Link to="/celebracion">La celebración</Link>
+            <Link to="/juegos">Los Juegos</Link>
+          </nav>
+        ) : (
+          <nav>
+            <Link to="/">Die vertraege</Link>
+            <Link to="/llegar">Anreise</Link>
+            <Link to="/ceremonia">Die Zeremonie</Link>
+            <Link to="/celebracion">Die feier</Link>
+            <Link to="/juegos">Die spiele</Link>
+          </nav>
+        )
+      }
+    </LangContext.Consumer>
   </div>
 )
+
+export default Header
