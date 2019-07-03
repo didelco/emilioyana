@@ -37,6 +37,7 @@ const Header = seti => (
             <Link to="/ceremonia">La ceremonia</Link>
             <Link to="/celebracion">La celebración</Link>
             <Link to="/juegos">Los Juegos</Link>
+            <Link to="/fotos">Galeria</Link>
           </nav>
         ) : (
           <nav>
@@ -45,6 +46,7 @@ const Header = seti => (
             <Link to="/ceremonia">Die Zeremonie</Link>
             <Link to="/celebracion">Die feier</Link>
             <Link to="/juegos">Die spiele</Link>
+            <Link to="/fotos">Gallerie</Link>
           </nav>
         )
       }

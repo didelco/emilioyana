@@ -53,7 +53,7 @@ export default () => (
                   repente esa canción y los componentes de la mesa tienen que levantarse y bailar. La mesa que mejor lo haga se llevará un
                   bonito premio 😊
                 </p>
-              </div>{' '}
+              </div>
             </div>
           ) : (
             <div>
@@ -66,6 +66,41 @@ export default () => (
           )
         }
       </LangContext.Consumer>
+      <iframe
+        src="https://www.youtube.com/embed/9Gc4QTqslN4?start=32"
+        frameborder="0"
+        allow=" autoplay; encrypted-media"
+        allowfullscreen
+        title="bird is the word"
+      />
+      <iframe
+        src="https://www.youtube.com/embed/18v1nAoTVw8?start=28"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media"
+        allowfullscreen
+        title="video"
+      />{' '}
+      <iframe
+        src="https://www.youtube.com/embed/cn69NJ-XNv0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="video"
+      />
+      <iframe
+        src="https://www.youtube.com/embed/ARt9HV9T0w8?start=13"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="video"
+      />
+      <iframe
+        src="https://www.youtube.com/embed/sOnqjkJTMaA?start=570"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="video"
+      />
     </div>
   </>
 )

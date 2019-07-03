@@ -4,7 +4,7 @@ import LangContext from '../contexts/langContext'
 
 export default () => (
   <>
-    <img id="hero" class="fullwidth" src={hero} />
+    <img id="hero" class="fullwidth" src={hero} alt="a" />
     <div className="content-index">
       <LangContext.Consumer>
         {lang =>
