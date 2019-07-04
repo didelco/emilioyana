@@ -30,9 +30,9 @@ export default () => (
                 <p>
                   También durante la comida, se repartirá una pinza de la ropa a cada mesa. El objetivo es intentar que no te enganchen a tí
                   la pinza por detrás sin que te des cuenta. Así que si te la han puesto, hay que buscar otro despistado al que ponerle la
-                  pinza sin que lo note...en un momento dado se escuchará la canción The end de The Doors (enlace) y los que lleven la pinza
-                  en ese momento, junto con sus parejas, nos deleitarán con un baile especial cuando bajemos a la pista de baile! 🕺🏻 👯 Los
-                  que mejor lo hagan, recibirán un premio a la hora de la cena 🏆
+                  pinza sin que lo note...en un momento dado se escuchará la canción The end de The Doors y los que lleven la pinza en ese
+                  momento, junto con sus parejas, nos deleitarán con un baile especial cuando bajemos a la pista de baile! 🕺🏻 👯 Los que
+                  mejor lo hagan, recibirán un premio a la hora de la cena 🏆
                 </p>
               </div>
               <div id="esfoto">
@@ -62,43 +62,84 @@ export default () => (
                 Während der Hochzeit haben wir einige Spiele organisiert und wollten sie vorher erklären, damit wir alle verstehen, wie man
                 spielt.
               </p>
+              <ul className="list-games">
+                <a href="#depinza">
+                  <li>DIE GLÜCKSSPRECHEN</li>
+                </a>
+                <a href="#defoto">
+                  <li>DIE VERRÜCKTEN FOTOS</li>
+                </a>
+                <a href="#debaile">
+                  <li>DIE TANZTISCHE</li>
+                </a>
+              </ul>
+              <div id="depinza">
+                <h3 className="titjuego">DIE GLÜCKSSPRECHEN</h3>
+                <img src={pinza} alt="pinza" />
+                <p>
+                  Auch während des Essens wird eine Wäscheklammer auf jeden Tisch verteilt. Das Ziel ist es, dass Sie die Zange nicht von
+                  hinten erwischen, ohne dass Sie es merken. Also, wenn Sie es gesagt haben, müssen Sie eine andere ahnungslose Stelle
+                  finden, um den Clip abzuspielen, ohne dass Sie es bemerken. Zu einem bestimmten Zeitpunkt hören Sie das Lied The End der
+                  The Doors und diejenigen, die zu diesem Zeitpunkt die Klammer tragen Wenn wir auf die Tanzfläche gehen, werden wir uns
+                  zusammen mit ihren Partnern mit einem besonderen Tanz freuen! 🕺🏻👯 Wer das Beste tut, erhält zum Abendessen einen Preis🏆
+                </p>
+              </div>
+              <div id="defoto">
+                <h3 className="titjuego">DIE VERRÜCKTEN FOTOS</h3>
+                <img src={fotos} alt="foto" />
+                <p>
+                  Auch zum Abendessen vergeben wir einen Preis für das beste Hochzeitsfoto: das lustigste, romantischste, lustigste ... Sie
+                  können Ihre Fotos direkt an die WhatsApp der Hochzeit senden, und unsere hochbegabte Jury wählt das Beste aus, das die
+                  preis🥇. Dann werden wir sie auf die Hochzeitswebsite hochladen.
+                </p>
+              </div>
+              <div id="debaile">
+                <h3 className="titjuego">DIE TANZTISCHE</h3>
+                <img src={baile} alt="baile" />
+                <p>
+                  Zuallererst finden Sie während des Essens auf jedem Tisch eine Karte, auf der ein Lied angezeigt wird. Die Songs, die wir
+                  ausgewählt haben, sind die folgenden (damit Sie sie erkennen können): Zu jeder Zeit des Essens kann dieses Lied plötzlich
+                  erklingen und die Mitglieder des Tisches müssen aufstehen und tanzen. Der Tisch, der das am besten kann, wird einen
+                  schönen Preis erhalten
+                </p>
+              </div>
             </div>
           )
         }
       </LangContext.Consumer>
       <iframe
         src="https://www.youtube.com/embed/9Gc4QTqslN4?start=32"
-        frameborder="0"
+        frameBorder="0"
         allow=" autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="bird is the word"
       />
       <iframe
         src="https://www.youtube.com/embed/18v1nAoTVw8?start=28"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />{' '}
       <iframe
         src="https://www.youtube.com/embed/cn69NJ-XNv0"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
       <iframe
         src="https://www.youtube.com/embed/ARt9HV9T0w8?start=13"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
       <iframe
         src="https://www.youtube.com/embed/sOnqjkJTMaA?start=570"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
     </div>

@@ -1,3 +1,5 @@
+/*************  GLOBAL **************/
+
 * {
   scroll-behavior: smooth;
 }
@@ -65,7 +67,9 @@ ul li {
   margin: 1rem;
 }
 
-#header {
+/*************  MOBILE **************/
+
+#header-mob {
   background: #fff;
   position: fixed;
   top: 0px;
@@ -74,20 +78,79 @@ ul li {
   z-index: 100;
 }
 
-#header #www {
-  display: none;
+#mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: yellow;
+  z-index: 101;
+  text-align: center;
+  touch-action: none;
 }
 
-#dateandplace {
-  display: none;
+.mobileMenuContent {
+  padding: 2rem auto;
+  text-align: center;
+}
+
+.mobileMenuContent ul {
+  margin: 4rem 0;
+  padding: 0;
+}
+
+.mobileMenuContent ul li {
+  border: none;
+}
+
+.mobileMenuContent a {
+  color: #333;
+  font-size: 2rem;
+}
+
+#mobileMenu {
+  clear: both;
+  text-align: center;
+}
+#mobileMenu #langSelector {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width: 120px;
+}
+
+#burguer {
+  margin: 16px;
+  width: 32px;
+  height: 32px;
+  float: left;
+  cursor: pointer;
+}
+
+#close {
+  position: fixed;
+  left: 0rem;
+  top: 0rem;
+  padding: 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#header-mob h1 {
+  float: left;
+  padding-left: 0rem;
 }
 
 #langSelector {
   cursor: pointer;
 }
+
 #langSelector img,
 #langSelector span {
   float: right;
+  cursor: pointer;
 }
 
 #langSelector img {
@@ -96,10 +159,6 @@ ul li {
 
 #title {
   text-align: center;
-}
-
-nav {
-  display: none;
 }
 
 .content-index {
@@ -153,11 +212,16 @@ iframe {
 }
 
 /*como llegar*/
-
+#indicaciones {
+  width: 100%;
+  text-align: center;
+}
 #indicaciones img {
   padding: 2rem 0;
   margin: 0 auto;
 }
+
+/*************  DESKTOP  **************/
 
 @media only screen and (min-width: 800px) {
   h1 {

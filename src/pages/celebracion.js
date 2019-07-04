@@ -10,10 +10,11 @@ export default () => (
             <h2>LA CELEBRACIÓN</h2>
             <p>
               La boda de Emilio y Ana estará llena de sorpresas, por lo que no vamos a desvelar mucho sobre la celebración. Para que no os
-              despisteis, sólo debéis saber que tras la ceremonia se celebrará un aperitivo y después se pasará al salón donde empezará la
+              despisteis, sólo debéis saber que tras la ceremonia se celebrará un coctel y después se pasará al salón donde empezará la
               comida. En el transcurso de esta, hemos organizado algunos juegos que explicamos en el apartado Juegos de esta página. Podéis
               consultar cualquier duda a las madrinas, Tania e Isabel. Todo lo demás... misterio y diversión!! ☺️
             </p>
+            <p>En todo el recinto del Cigarral hay WIFI abierta, no necesita contraseña.</p>
           </div>
         ) : (
           <div>
@@ -24,6 +25,7 @@ export default () => (
               Raum gehen, in dem das Essen beginnen wird. Im Zuge dessen haben wir einige Spiele organisiert, die wir im Abschnitt Spiele
               auf dieser Seite erklären. Sie können Fragen an die Patinnen Tania und Isabel wenden. Alles andere ... Rätsel und Spaß !! ☺️
             </p>
+            <p>Im gesamten Cigarral ist WLAN offen, Sie benötigen kein Passwort.</p>
           </div>
         )
       }
