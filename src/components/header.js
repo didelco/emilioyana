@@ -21,7 +21,7 @@ const CloseButton = data => (
   </div>
 )
 
-const HeaderBlock = (props, data) => (
+const HeaderBlock = data => (
   <div id="header">
     <div id="www">
       <div id="dateandplace">
@@ -30,7 +30,7 @@ const HeaderBlock = (props, data) => (
       <LangSelector lang={data.lang} seti={data.seti} />
     </div>
     <h1>Ana & Emilio</h1>
-    {props.children}
+    {data.children}
   </div>
 )
 
