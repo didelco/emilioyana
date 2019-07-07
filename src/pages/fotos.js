@@ -84,5 +84,9 @@ export default () => (
       <img src={fotos} alt="fotos" width="180px" style={{ marginBottom: '20px' }} />
     </div>
     <BasicRows />
+
+    <a href="https://photos.app.goo.gl/jrkW5v69m9inYgHr6" target="_blank">
+      Todas las fotos / Alle Fotos
+    </a>
   </>
 )
